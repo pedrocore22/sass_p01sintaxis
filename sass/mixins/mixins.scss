@@ -1,0 +1,8 @@
+// Declaración de mixins (similares a funciones)
+
+@mixin standar-button {
+    padding: 0.5rem 1rem;
+    border-width: 1px;
+    border-style: solid;
+    border-radius: 0.3rem;
+}

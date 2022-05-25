@@ -1,0 +1,52 @@
+// Sintaxis básica
+
+// Importación de archivos externos
+
+@import './variables/variables';
+@import './mixins/mixins';
+
+// Sintaxis anidadad
+
+.container {
+    max-width: 1260px;
+    margin: 0 auto;
+
+    &.grey-back {
+        background-color: rgb(195, 195, 195);
+    }
+
+    h1 {
+        color: crimson;
+    }
+}
+
+// button {
+//     padding: 0.5rem 1rem;
+//     font-size: 1.1rem;
+//     background-color: $brand-color;
+//     border: none;
+// }
+
+button {
+    // Para implementar un mixin se usa @include
+    @include standar-button;
+
+    &.primary {
+        background-color: $brand-color;
+        border-color: $brand-color;
+        color: white;
+
+        &:hover {
+            background-color: $darker-brand-color;
+            border-color: $darker-brand-color;
+        }
+    }
+
+    &.secondary {
+        background-color: rgb(182, 182, 182);
+        border-color: rgb(182, 182, 182);
+        color: grey;
+    }
+
+}
+

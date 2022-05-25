@@ -1,0 +1,33 @@
+.container {
+  max-width: 1260px;
+  margin: 0 auto;
+}
+.container.grey-back {
+  background-color: rgb(195, 195, 195);
+}
+.container h1 {
+  color: crimson;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  border-width: 1px;
+  border-style: solid;
+  border-radius: 0.3rem;
+}
+button.primary {
+  background-color: #12a182;
+  border-color: #12a182;
+  color: white;
+}
+button.primary:hover {
+  background-color: #0a624f;
+  border-color: #0a624f;
+}
+button.secondary {
+  background-color: rgb(182, 182, 182);
+  border-color: rgb(182, 182, 182);
+  color: grey;
+}
+
+/*# sourceMappingURL=styles.css.map */
